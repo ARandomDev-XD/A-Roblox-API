@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: A-Roblox-API
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn server:app"
+    pythonVersion: 3.10.13
